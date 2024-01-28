@@ -31,5 +31,9 @@ module.exports = {
         "react"
     ],
     "rules": {
+      // supress errors for missing imports in files
+      "react/react-in-jsx-scope": "off",
+      // allow jsx syntax in js files (for next.js project)
+      "react/jsx-filename-extension": [1, {extensions: [".ts", ".tsx"]}]
     }
 }
